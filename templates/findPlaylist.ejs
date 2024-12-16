@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application</title>
+    <style>
+       body {
+         background-color: #D8BFD8;
+          
+      }
+      button{
+        background-color: #D8BFD8;
+        border:none;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-left: 5%;
+        padding: 2%;
+      }
+
+      .buttons{
+        margin-left: 20%;
+      }
+
+
+      .home{
+        text-align:center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin-bottom: 20px;
+      }
+      h1{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-align:center;
+        color: purple;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        font-weight: 300;
+        font-weight: 400;
+      }
+
+        form {
+            max-width: 600px;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #F5F0F6;
+            border: 2px groove purple;
+            
+        }
+
+    </style>
+</head>
+<body>
+
+  <h1>Find a playlist by entering the playlist name or the genre </h1>
+  
+  <div class="home"><a href="/">HOME</a></div>
+  <form id="find" action="/showingPlaylist" method="post">
+      <strong> Playlist Name: </strong> <br> <br>
+      <input type="text" id="name" name="name">
+      <br> <em> or </em> <br>
+      <strong> Genre: </strong> <br> <br>
+      <input type="text" id="genre" name="genre"> <br>
+      <div class="buttons">
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+      </div>
+  </form>
+
+    
+</body>
+</html>

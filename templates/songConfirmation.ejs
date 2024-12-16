@@ -1,0 +1,44 @@
+<!-- DO NOT MODIFY THIS FILE -->
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Songs Confirmation</title>
+	<style>
+		body {
+		   background-color: #D8BFD8;
+			
+		} 
+		h1{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-align:center;
+        color: #3c4d67;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        font-weight: 300;
+        font-weight: 400;
+      }
+		.home{
+        text-align:center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin-bottom: 20px;
+      }
+		
+		</style>
+</head>
+
+<body>
+	<h1>Songs Confirmation</h1>
+	<div>
+		<div class="home"><a href="/">HOME</a></div>
+		<strong>Playlist Name: </strong><%- name %><br>
+		<strong>Genre: </strong><%- genre %><br>
+		<strong>Songs Selected: </strong><%- songs %><br>
+		
+		<br>
+		<em>Thank you for choosing your songs! Your playlist is safely stored. You can view your playlist by
+			goint to the <a href="/">HOME</a> page and click on <a href="/viewPlaylist">View Playlist</a>.</em> <br>
+	</div>
+</body>
+
+</html>
